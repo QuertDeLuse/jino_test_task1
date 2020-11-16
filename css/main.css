@@ -85,6 +85,28 @@ header {
   width: 16.6666667%;
 }
 
+.create-acc-btn-wrapper {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.create-acc-btn-wrapper .create-acc-btn {
+  display: inline-block;
+  font-size: 24px;
+  padding: 16px 50px;
+  font-weight: bold;
+  background-color: #77b53c;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.create-acc-btn-wrapper .create-acc-btn:hover {
+  background-color: #5a8f28;
+}
+
 header .logo {
   margin-top: 30px;
   display: -webkit-box;
@@ -188,28 +210,6 @@ header .domen-checker .domen-checker__alert .alert-reg {
   color: #77b53c;
 }
 
-header .create-acc-btn-wrapper {
-  margin-top: 40px;
-  text-align: center;
-}
-
-header .create-acc-btn-wrapper .create-acc-btn {
-  display: inline-block;
-  font-size: 24px;
-  padding: 16px 40px;
-  font-weight: bold;
-  background-color: #77b53c;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #fff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-header .create-acc-btn-wrapper .create-acc-btn:hover {
-  background-color: #5a8f28;
-}
-
 header .down-btn-wrapper {
   margin-top: 150px;
   text-align: center;
@@ -218,5 +218,282 @@ header .down-btn-wrapper {
 
 header .down-btn-wrapper .down-btn {
   width: 25px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+header .down-btn-wrapper .down-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.advantages .logo {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages .logo .logo__img {
+  background-color: #fff;
+  color: #fff;
+}
+
+.advantages .logo .logo__p {
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.advantages .section-heading-wrapper {
+  margin: 0 auto;
+}
+
+.advantages .section-heading-wrapper .section-heading {
+  margin: 0px;
+  margin-top: 60px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.advantages .card-collection {
+  margin-top: 60px;
+}
+
+.advantages .card-collection .card-wrapper .card {
+  cursor: pointer;
+  text-align: center;
+}
+
+.advantages .card-collection .card-wrapper .card .card__img {
+  text-align: center;
+}
+
+.advantages .card-collection .card-wrapper .card .card__h3 {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.advantages .description-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.advantages .description-wrapper .description {
+  display: none;
+  font-size: 16px;
+  padding: 25px 40px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  border: 1px solid rgba(95, 96, 98, 0.5);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.advantages .description-wrapper .description:after {
+  display: none;
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid rgba(95, 96, 98, 0.5);
+  border-right: 1px solid rgba(95, 96, 98, 0.5);
+  background-color: #f7f7f7;
+  z-index: 2;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.advantages .description-wrapper .description_active {
+  opacity: 1;
+  display: block;
+}
+
+.advantages .description-wrapper .landing:after,
+.advantages .description-wrapper .dns:after,
+.advantages .description-wrapper .certificate:after,
+.advantages .description-wrapper .auto:after {
+  top: 6px;
+  display: block;
+}
+
+.advantages .description-wrapper .landing:after {
+  left: 11%;
+}
+
+.advantages .description-wrapper .dns:after {
+  left: 36%;
+}
+
+.advantages .description-wrapper .certificate:after {
+  left: 61%;
+}
+
+.advantages .description-wrapper .auto:after {
+  left: 86%;
+}
+
+.advantages .description-wrapper .cloud:after,
+.advantages .description-wrapper .ssl:after,
+.advantages .description-wrapper .dnssec:after,
+.advantages .description-wrapper .redirect:after {
+  bottom: 6px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  display: block;
+}
+
+.advantages .description-wrapper .cloud:after {
+  left: 11%;
+}
+
+.advantages .description-wrapper .ssl:after {
+  left: 36%;
+}
+
+.advantages .description-wrapper .dnssec:after {
+  left: 61%;
+}
+
+.advantages .description-wrapper .redirect:after {
+  left: 86%;
+}
+
+.advantages .second-collection {
+  margin-top: 15px;
+}
+
+.advantages .create-acc-btn-wrapper_second {
+  margin-bottom: 70px;
+}
+
+footer {
+  background-image: url("../img/background2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer .logo {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .logo .logo__img {
+  background-color: #fff;
+  color: #fff;
+}
+
+footer .logo .logo__p {
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer .sub-heading-wrapper {
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+footer .sub-heading-wrapper .sub-heading {
+  margin: 0;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+
+footer .main-heading-wrapper {
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+footer .main-heading-wrapper .main-heading {
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer .promotion-text-wrapper {
+  margin-top: 50px;
+  position: relative;
+}
+
+footer .promotion-text-wrapper .promotion-text {
+  margin: 0;
+  margin-top: 50px;
+  padding: 30px 40px;
+  background-color: #df4a5e;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+footer .promotion-text-wrapper .promotion-text .promotion-text_bold {
+  font-weight: bold;
+}
+
+footer .promotion-text-wrapper .promotion-text .promotion-text-link {
+  color: #fff;
+}
+
+footer .promotion-text-wrapper .promotion-logo {
+  position: absolute;
+  top: -30px;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .promotion-text-wrapper .promotion-logo:before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 50px;
+  left: -40px;
+}
+
+footer .promotion-text-wrapper .promotion-logo .logo-number {
+  font-size: 50px;
+  color: #fff;
+}
+
+footer .promotion-text-wrapper .promotion-logo .logo-img {
+  color: #fff;
+  width: 28px;
+  margin-left: 5px;
+}
+
+footer .copyright-wrapper {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+footer .copyright-wrapper .copyright {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.2);
 }
 /*# sourceMappingURL=main.css.map */
