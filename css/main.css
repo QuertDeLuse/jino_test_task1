@@ -118,14 +118,17 @@ header .logo {
 }
 
 header .logo .logo__img {
+  -webkit-mask-image: url(../img/logo.svg);
+          mask-image: url(../img/logo.svg);
+  width: 65px;
+  height: 16px;
   background-color: #fff;
-  color: #fff;
 }
 
 header .logo .logo__p {
   margin: 0px;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
@@ -197,7 +200,8 @@ header .domen-checker .domen-checker__button:hover {
   background-color: #33393f;
 }
 
-header .domen-checker .domen-checker__alert {
+header .domen-checker .domen-checker__alert_free {
+  display: none;
   margin: 0px;
   font-size: 16px;
   color: #fff;
@@ -205,12 +209,17 @@ header .domen-checker .domen-checker__alert {
   padding: 15px 0px;
 }
 
-header .domen-checker .domen-checker__alert .alert-reg {
+header .domen-checker .alert-reg {
   margin-left: 5px;
   color: #77b53c;
 }
 
+header .domen-checker .alert-active {
+  display: block;
+}
+
 header .down-btn-wrapper {
+  display: block;
   margin-top: 150px;
   text-align: center;
   margin-bottom: 60px;
@@ -239,15 +248,17 @@ header .down-btn-wrapper .down-btn:hover {
 }
 
 .advantages .logo .logo__img {
-  background-color: #fff;
-  color: #fff;
+  -webkit-mask-image: url(../img/logo.svg);
+          mask-image: url(../img/logo.svg);
+  width: 65px;
+  height: 16px;
+  background-color: #b22725;
 }
 
 .advantages .logo .logo__p {
   margin: 0px;
   margin-left: 10px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
   text-transform: uppercase;
   color: #000;
 }
@@ -396,15 +407,17 @@ footer .logo {
 }
 
 footer .logo .logo__img {
+  -webkit-mask-image: url(../img/logo.svg);
+          mask-image: url(../img/logo.svg);
+  width: 65px;
+  height: 16px;
   background-color: #fff;
-  color: #fff;
 }
 
 footer .logo .logo__p {
   margin: 0px;
   margin-left: 10px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -437,13 +450,16 @@ footer .main-heading-wrapper .main-heading {
 footer .promotion-text-wrapper {
   margin-top: 50px;
   position: relative;
+  background-color: #df4a5e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer .promotion-text-wrapper .promotion-text {
+  width: 80%;
   margin: 0;
-  margin-top: 50px;
   padding: 30px 40px;
-  background-color: #df4a5e;
   color: #fff;
   font-size: 18px;
   font-weight: normal;
@@ -458,9 +474,8 @@ footer .promotion-text-wrapper .promotion-text .promotion-text-link {
 }
 
 footer .promotion-text-wrapper .promotion-logo {
-  position: absolute;
-  top: -30px;
-  right: 50px;
+  width: 20%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,21 +485,30 @@ footer .promotion-text-wrapper .promotion-logo:before {
   position: absolute;
   content: '';
   width: 2px;
-  height: 40%;
+  height: 60%;
   background-color: rgba(255, 255, 255, 0.2);
-  top: 50px;
+  top: 20%;
   left: -40px;
 }
 
 footer .promotion-text-wrapper .promotion-logo .logo-number {
   font-size: 50px;
   color: #fff;
+  margin: 0;
+  margin-top: 20px;
 }
 
 footer .promotion-text-wrapper .promotion-logo .logo-img {
-  color: #fff;
-  width: 28px;
-  margin-left: 5px;
+  position: absolute;
+  -webkit-transform: scale(0.08);
+          transform: scale(0.08);
+  -webkit-mask-image: url(../img/plus-bold.svg);
+          mask-image: url(../img/plus-bold.svg);
+  width: 515px;
+  height: 510px;
+  top: -205px;
+  right: -90%;
+  background-color: #fff;
 }
 
 footer .copyright-wrapper {
@@ -495,5 +519,31 @@ footer .copyright-wrapper {
 footer .copyright-wrapper .copyright {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.2);
+}
+
+.navigtaion-wrapper {
+  position: fixed;
+  top: 45%;
+  right: 5%;
+  z-index: 99;
+}
+
+.navigtaion-wrapper .navigtaion {
+  width: 16px;
+}
+
+.navigtaion-wrapper .navigtaion .navigtaion__dot {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.navigtaion-wrapper .navigtaion .navigtaion__dot_active {
+  background-color: #333;
+  border: 1px solid #fff;
 }
 /*# sourceMappingURL=main.css.map */

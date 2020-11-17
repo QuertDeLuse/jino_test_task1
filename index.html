@@ -14,12 +14,20 @@
 </head>
 
 <body>
-    <header>
+    <div class="navigtaion-wrapper" id="Navigtaion">
+        <div class="navigtaion">
+            <a href="#Header" class="navigtaion__dot navigtaion__dot_active"></a>
+            <a href="#Advantages" class="navigtaion__dot"></a>
+            <a href="#Footer" class="navigtaion__dot"></a>
+        </div>
+    </div>
+
+    <header class="forNav" id="Header">
         <div class="container">
             <div class="three-col-grid">
                 <div class="grid-item">
                     <div class="logo">
-                        <img class="logo__img" src="img/logo.svg" alt="logo">
+                        <div class="logo__img"></div>
                         <p class="logo__p">домены</p>
                     </div>
                 </div>
@@ -37,10 +45,11 @@
                 </div>
                 <div class="grid-item">
                     <div class="col-8 ml-2">
-                        <form action="" class="domen-checker">
-                            <input type="text" class="domen-checker__input" placeholder="Введите домен">
-                            <button class="domen-checker__button">Проверить</button>
-                            <p class="domen-checker__alert">Домен example.ru — свободен.
+                        <form id="Form" class="domen-checker">
+                            <input id="DomentInput" type="text" class="domen-checker__input" placeholder="Введите домен">
+                            <button type="submit" id="DomenChecker" class="domen-checker__button">Проверить</button>
+                            <p class="domen-checker__alert_free">Домен <span id="DomenName"></span> —
+                                свободен.
                                 <a href="#" class="alert-reg">Зарегистрировать за39₽</a>
                             </p>
                         </form>
@@ -59,20 +68,21 @@
                 </div>
 
                 <div class="grid-item">
-                    <div class="down-btn-wrapper">
+                    <a class="down-btn-wrapper" href="#Advantages">
                         <img src="img/down.png" alt="down button" class="down-btn">
-                    </div>
+                    </a>
                 </div>
             </div>
 
         </div>
     </header>
-    <section class="advantages">
+
+    <section id="Advantages" class="advantages forNav">
         <div class="container">
             <div class="three-col-grid">
                 <div class="grid-item">
                     <div class="logo">
-                        <img class="logo__img" src="img/logo.svg" alt="logo">
+                        <div class="logo__img"></div>
                         <p class="logo__p">домены</p>
                     </div>
                 </div>
@@ -247,12 +257,12 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="forNav" id="Footer">
         <div class="container">
             <div class="three-col-grid">
                 <div class="grid-item">
                     <div class="logo">
-                        <img class="logo__img" src="img/logo.svg" alt="logo">
+                        <div class="logo__img"></div>
                         <p class="logo__p">домены</p>
                     </div>
                 </div>
@@ -301,7 +311,7 @@
                         </p>
                         <div class="promotion-logo">
                             <h3 class="logo-number">1000</h3>
-                            <img src="img/plus-bold.svg" alt="plus-bold" class="logo-img">
+                            <div class="logo-img">
                         </div>
                     </div>
                 </div>
