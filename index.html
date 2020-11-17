@@ -24,7 +24,7 @@
 
     <header class="forNav" id="Header">
         <div class="container">
-            <div class="three-col-grid">
+            <div class="three-col-grid two-col-grid-tablet">
                 <div class="grid-item">
                     <div class="logo">
                         <div class="logo__img"></div>
@@ -44,9 +44,10 @@
                     </div>
                 </div>
                 <div class="grid-item">
-                    <div class="col-8 ml-2">
+                    <div class="col-8 ml-2 ml-none-tablet col-1-tablet">
                         <form id="Form" class="domen-checker">
-                            <input id="DomentInput" type="text" class="domen-checker__input" placeholder="Введите домен">
+                            <input id="DomentInput" type="text" class="domen-checker__input"
+                                placeholder="Введите домен">
                             <button type="submit" id="DomenChecker" class="domen-checker__button">Проверить</button>
                             <p class="domen-checker__alert_free">Домен <span id="DomenName"></span> —
                                 свободен.
@@ -57,20 +58,17 @@
                 </div>
 
                 <div class="grid-item">
-                    <div class="three-col-grid">
-                        <div class="grid-item"></div>
-                        <div class="grid-item">
-                            <div class="create-acc-btn-wrapper">
-                                <a class="create-acc-btn" href="#">Создать аккаунт</a>
-                            </div>
-                        </div>
+                    <div class="create-acc-btn-wrapper">
+                        <a class="create-acc-btn" href="#">Создать аккаунт</a>
                     </div>
                 </div>
 
                 <div class="grid-item">
-                    <a class="down-btn-wrapper" href="#Advantages">
-                        <img src="img/down.png" alt="down button" class="down-btn">
-                    </a>
+                    <div class="down-btn-wrapper">
+                        <a class="down-btn" href="#Advantages">
+                            <img src="img/down.png" alt="down button" class="down-btn-img">
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -79,7 +77,7 @@
 
     <section id="Advantages" class="advantages forNav">
         <div class="container">
-            <div class="three-col-grid">
+            <div class="three-col-grid one-col-grid-tablet">
                 <div class="grid-item">
                     <div class="logo">
                         <div class="logo__img"></div>
@@ -96,7 +94,7 @@
             </div>
 
             <div class="card-collection">
-                <div class="four-col-grid">
+                <div class="four-col-grid two-col-grid-tablet">
                     <div class="grid-item">
                         <div class="card-wrapper">
                             <div class="card">
@@ -197,7 +195,7 @@
             </div>
 
             <div class="card-collection second-collection">
-                <div class="four-col-grid">
+                <div class="four-col-grid two-col-grid-tablet">
                     <div class="grid-item">
                         <div class="card-wrapper">
                             <div class="card">
@@ -243,13 +241,8 @@
 
             <div class="one-col-grid">
                 <div class="grid-item">
-                    <div class="three-col-grid">
-                        <div class="grid-item"></div>
-                        <div class="grid-item">
-                            <div class="create-acc-btn-wrapper create-acc-btn-wrapper_second">
-                                <a class="create-acc-btn" href="#">Создать аккаунт</a>
-                            </div>
-                        </div>
+                    <div class="create-acc-btn-wrapper create-acc-btn-wrapper_second">
+                        <a class="create-acc-btn" href="#">Создать аккаунт</a>
                     </div>
                 </div>
             </div>
@@ -259,7 +252,7 @@
 
     <footer class="forNav" id="Footer">
         <div class="container">
-            <div class="three-col-grid">
+            <div class="three-col-grid one-col-grid-tablet">
                 <div class="grid-item">
                     <div class="logo">
                         <div class="logo__img"></div>
@@ -289,13 +282,8 @@
 
             <div class="one-col-grid">
                 <div class="grid-item">
-                    <div class="three-col-grid">
-                        <div class="grid-item"></div>
-                        <div class="grid-item">
-                            <div class="create-acc-btn-wrapper create-acc-btn-wrapper_second">
-                                <a class="create-acc-btn" href="#">Создать аккаунт</a>
-                            </div>
-                        </div>
+                    <div class="create-acc-btn-wrapper create-acc-btn-wrapper_second">
+                        <a class="create-acc-btn" href="#">Создать аккаунт</a>
                     </div>
                 </div>
             </div>
@@ -311,12 +299,11 @@
                         </p>
                         <div class="promotion-logo">
                             <h3 class="logo-number">1000</h3>
-                            <div class="logo-img">
+                            <img class="logo-img" src="img/plus-bold.svg">                          
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="one-col-grid">
                 <div class="grid-item">
                     <div class="copyright-wrapper">
@@ -327,7 +314,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
 
     <script src="js/script.js"></script>
